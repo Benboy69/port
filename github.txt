@@ -1,0 +1,18 @@
+HOW TO USE GIT
+
+# How to start a github repository
+git init
+git remote add origin (link)    # links your folder to a github repo
+git add .                       # adds all your files to be ready
+git commit -m "message"         # put a message for what you did
+git push origin master          # pushes your changes to the github repo
+
+# To make changes to a github repository, do the same thing, but skip the 'add origin' and 'git init' steps
+
+# To download your repo on a different computer
+
+git clone (link)
+
+# To see what is added or commited
+
+git status

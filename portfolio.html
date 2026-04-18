@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Benson's Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-layout {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .project-text {
+      flex: 1;
+    }
+
+    .project-image {
+      width: min(180px, 35%);
+      border-radius: 10px;
+      border: 2px solid #334155;
+    }
+
+    .features {
+      margin-top: 10px;
+      padding-left: 20px;
+      color: #cbd5e1;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+    }
+
+    @media (max-width: 700px) {
+      .project-layout {
+        flex-direction: column;
+      }
+
+      .project-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Benson's Portfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Benson. I enjoy building games, learning programming, and improving my coding skills.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <!-- Project 1 -->
+  <div class="card">
+    <div class="project-layout">
+      <div class="project-text">
+        <h3>Fishing Game</h3>
+        <p>2D fishing game built with Python and Pygame.</p>
+        <ul class="features">
+          <li>Fishing mini-game system</li>
+          <li>Multiple fish types</li>
+          <li>Oxygen survival mechanic</li>
+      </div>
+      <img src="playerSprite.png" class="project-image">
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="card">
+    <div class="project-layout">
+      <div class="project-text">
+        <h3>Space waves info page</h3>
+        <p>A website with info about space waves, a knock-off gd.</p>
+        <ul class="features">
+          <li>images</li>
+          <li>Styled with CSS</li>
+          <li>tons of info about space waves</li>
+      </div>
+      <img src="space.png" class="project-image">
+    </div>
+  </div>
+  <!-- Project 3 -->
+  <div class="card">
+    <div class="project-layout">
+      <div class="project-text">
+        <h3>Rpg</h3>
+        <p>A small rpg within code about someone fighting enemies.</p>
+        <ul class="features">
+          <li>shops</li>
+          <li>bosses</li>
+          <li>turn based fighting</li>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <div class="skill">Python</div>
+    <div class="skill">Pygame</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Gaming</div>
+    <div class="skill">Staying awake</div>
+    <div class="skill">Biking</div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Benson</p>
+</footer>
+
+</body>
+</html>
